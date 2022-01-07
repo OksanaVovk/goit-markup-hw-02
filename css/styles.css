@@ -145,11 +145,15 @@ body {
 .contacts-footer .link {
   color: var(--footer-contacts-color);
   font-style: normal;
+  text-decoration: none;
 }
+
 
 .contacts-footer .place {
   color: var(--background-color);
+  text-decoration: none;
 }
+
 
 /* Сторінка ПОРТФОЛІО */
 
@@ -183,7 +187,7 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-}
+  
 
 .portfolio-text {
   font-size: 16px;
