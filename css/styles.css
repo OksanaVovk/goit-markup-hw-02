@@ -8,6 +8,7 @@
   --section-color: #f5f4fa;
   --footer-color: #2f303a;
   --logo-color: #000000;
+  --footer-contacts-color: rgba(255, 255, 255, 0.6);
 }
 
 /* стиль сторінки */
@@ -68,7 +69,9 @@ body {
 .site-nav .link:hover,
 .site-nav .link:focus,
 .contacts .link:hover,
-.contacts .link:focus {
+.contacts .link:focus,
+.contacts-footer .link:hover,
+.contacts-footer .link:focus {
   color: var(--accent-color);
 }
 
@@ -137,4 +140,52 @@ body {
 /* футер */
 .page-footer {
   background-color: var(--footer-color);
+}
+
+.contacts-footer .link {
+  color: var(--footer-contacts-color);
+  font-style: normal;
+}
+
+.contacts-footer .place {
+  color: var(--background-color);
+}
+
+/* Сторінка ПОРТФОЛІО */
+
+/* фільтр */
+.filter {
+  list-style: none;
+}
+.button-filter {
+  color: var(--title-text-color);
+  background-color: var(--section-color);
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+
+.button-filter:hover,
+.button-filter:focus,
+.button-filter.current {
+  background-color: var(--accent-color);
+  color: var(--background-color);
+}
+
+/* роботи */
+.work-title {
+  color: var(--title-text-color);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio-text {
+  font-size: 16px;
+  line-height: 1.87;
 }
